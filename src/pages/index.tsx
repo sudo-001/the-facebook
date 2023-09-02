@@ -4,6 +4,8 @@ import { getSession, useSession } from 'next-auth/react'
 import Login from './login/login';
 import NavBar from '@/components/global/Navbar';
 import LeftSideBar from '@/components/sections/leftSideBar';
+import RightSideBar from '@/components/sections/rightSideBar';
+import Feed from '@/components/sections/Feed';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,11 +16,16 @@ export default function Home() {
   if (!session) return <Login />
 
   return (
-    <div className=''>
+    <main className=''>
       <NavBar />
+      {/* LeftSideBar */}
       <LeftSideBar />
-      HomePage
-    </div>
+
+      {/* HomePage */}
+      <Feed />
+      {/* RightSideBar */}
+      <RightSideBar />
+    </main>
   )
 }
 

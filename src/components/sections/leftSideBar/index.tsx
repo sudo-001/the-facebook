@@ -31,7 +31,6 @@ function LeftSideBar({}: Props) {
             <p className='text-[14px] text-gray-500 mt-2'>Privacy - terms - Advertising . Ad choices . <br />Coolies - Meta @{new Date().getFullYear()}</p>
 
         </div>
-        LeftSideBar
     </div>
   )
 }
