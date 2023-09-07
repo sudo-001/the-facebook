@@ -64,7 +64,7 @@ function Story({ }: Props) {
 
             <div className="flex mt-5 pb-5 overflow-x-scroll scrollbar-hide">
                 <div className="w-[112px] shadow-md rounded-[15px] pb-2 shrink-0">
-                    <img src={session?.user?.image!} alt="image" className="w-full h-full rounded-t-[15px] object-fit" />
+                    <img src={session?.user?.image!} alt="image" className="w-full  rounded-t-[15px] object-fit" />
                     <div>
                         <div className="bg-primary w-[35px] h-[35px] rounded-full grid place-items-center text-[24px] text-white mx-auto -mt-[20px] relative outline outline-[6px] outline-white">
                             <AiOutlinePlus />
