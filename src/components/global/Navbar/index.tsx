@@ -59,8 +59,7 @@ function NavBar({ }: Props) {
                     className="w-[44px] cursor-pointer rounded-full"
                     src={session?.user?.image ? session?.user?.image : ""}
                     alt="dp"
-                    
-                    onClick={signOut}
+                    onClick={() => signOut}
                 />
             </div>
         </div>
